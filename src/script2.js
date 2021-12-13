@@ -1,5 +1,7 @@
-const name = ['jewel','tosi','nasi'];
+const name = ['ibrahim','jewel','tosi','nasi'];
 function printNumber (str) {
     return str.reduce((mon) => console.log(mon))
 }
-printNumber(name)
+printNumber(name);
+
+console.log("hello ibrahim");
