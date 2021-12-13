@@ -3,5 +3,5 @@ function printNumber (str) {
     return str.reduce((mon) => console.log(mon))
 }
 printNumber(name);
-
-console.log("hello ibrahim");
+console.log("ibrahim")
+console.log("man")

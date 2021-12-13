@@ -9,4 +9,5 @@ function printNumber(str) {
 }
 
 printNumber(name);
-console.log("hello ibrahim");
+console.log("ibrahim");
+console.log("man");

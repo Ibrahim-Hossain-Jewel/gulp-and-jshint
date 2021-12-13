@@ -1,17 +1,14 @@
-
-const gulp = require("gulp");
+const { task, src, dest, watch, series } = require("gulp");
 const babel = require("gulp-babel");
-const { dest } = require("vinyl-fs");
-gulp.task("moveHTML", function (){
-    return gulp.src("src/*.html")
-    .pipe(gulp.dest("dist"));
-});
-gulp.task("js", ()=>{
-    return gulp.src("src/*.js")
-    .pipe(babel())
-    .pipe(gulp.dest("dist"))
-});
-gulp.task("watch",()=>{
-    return gulp.watch('src/*.js',gulp.task('js'));
+
+task("js",()=>{
+    return src("src/*.js").pipe(babel()).pipe(dest("dist/js"));
 })
-gulp.task("default",gulp.series("moveHTML","js","watch"));
+task("moveHTML",()=>{
+    return src("src/*.html").pipe(dest("dist"));
+});
+task("watch",()=>{
+    watch("src/*.js",series("js"));
+});
+
+task("default",series('moveHTML','js','watch'));
