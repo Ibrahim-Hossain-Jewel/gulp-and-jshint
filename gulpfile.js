@@ -8,7 +8,7 @@ task("moveHTML",()=>{
     return src("src/*.html").pipe(dest("dist"));
 });
 task("watch",()=>{
-    watch("src/*.js",series("js"));
-});
-
+    watch("src/*.js",{persistent: false},series("js"));
+}); 
 task("default",series('moveHTML','js'));
+
