@@ -11,4 +11,6 @@ task("watch",()=>{
     watch("src/*.js",{persistent: false},series("js"));
 }); 
 task("default",series('moveHTML','js'));
+//you don't have to add the watch task inside the series() API and also you could delete the persistent object property
+
 
