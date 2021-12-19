@@ -9,5 +9,9 @@ function printNumber(str) {
 }
 
 printNumber(name);
-console.log("ibrahim");
-console.log("man");
+
+var mother = function mother() {
+  console.log("hello mother!");
+};
+
+mother();

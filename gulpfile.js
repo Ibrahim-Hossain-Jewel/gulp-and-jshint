@@ -11,4 +11,4 @@ task("watch",()=>{
     watch("src/*.js",series("js"));
 });
 
-task("default",series('moveHTML','js','watch'));
+task("default",series('moveHTML','js'));

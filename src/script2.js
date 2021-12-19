@@ -3,5 +3,7 @@ function printNumber (str) {
     return str.reduce((mon) => console.log(mon))
 }
 printNumber(name);
-console.log("ibrahim")
-console.log("man")
+const mother = ()=>{
+    console.log("hello mother!");    
+}
+mother();
