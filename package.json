@@ -11,13 +11,16 @@
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
     "gulp": "^4.0.2",
-    "gulp-babel": "^8.0.0"
+    "gulp-babel": "^8.0.0",
+    "gulp-jshint": "^2.1.0",
+    "jshint": "^2.13.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src -d lib",
     "gulp": "gulp default",
-    "server": "http-server"
+    "server": "http-server",
+    "lint" : "gulp lint"
   },
   "author": "",
   "license": "ISC"
