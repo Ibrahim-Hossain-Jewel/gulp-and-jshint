@@ -20,7 +20,7 @@
     "build": "babel src -d lib",
     "gulp": "gulp default",
     "server": "http-server",
-    "lint" : "gulp lint"
+    "lint": "gulp lint"
   },
   "author": "",
   "license": "ISC"
